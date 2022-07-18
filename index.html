@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="container">
+            <div class="upperbar">
+                <img class="upbar" src="https://github.com/OldWebProject/owproject/blob/main/images/aolupperbar.png?raw=true">
+                <button href="#" class="btn1" type="button"></button>
+                <button href="#" class="btn2" type="button"></button>
+                <button href="#" class="btn3" type="button"></button>
+                <button href="#" class="btn4" type="button"></button>
+                <button href="#" class="btn5" type="button"></button>
+                <button href="#" class="btn6" type="button"></button>
+            </div>
+            <div class="top">
+                <div class="toptop">
+                    <h5><script>
+                        const monthNames = ["January", "February", "March", "April", "May", "June",
+                        "July", "August", "September", "October", "November", "December"];
+                        const dayofweekname = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                        date = new Date();
+                        year = date.getFullYear();
+                        day = date.getDate();
+                        document.write(dayofweekname[date.getDay()] + ", " + monthNames[date.getMonth()] + " " + day + ", " + year);
+                    </script></h5>
+                </div>
+                <div class="firstside"></div>
+                <div class="secondside"></div>
+                <div class="thirdside"></div>
+            </div>
+            <div class="topnewsnow">
+                <p class="p1">Top News Now:</p>
+            </div>
+            <div class="searcharea">
+                <div class="aolnetfind">
+                    <a href="#" class="aolnetfindlink">AOL NetFind</a>
+                    <img class="netfindicon" src="https://github.com/OldWebProject/owproject/blob/main/images/netfindglobe.gif?raw=true">
+                </div>
+                <div class="s">
+                    <img class="spacer" src="https://i.imgur.com/vab4CJV.png">
+                    <p class="kidssurfsafe">Kids surf safely in</p>
+                    <a href="#" class="aolnetfindkids">AOL NetFind Kids Only.</a>
+                </div>
+                <img class="spacer2" src="https://i.imgur.com/vab4CJV.png">
+                <ul>
+                    <li>
+                        <a href="#" class="e1">Search the Web</a>
+                        <a href="#" class="e2">Yellow Pages</a>
+                        <a href="#" class="e3">White Pages</a>
+                        <a href="#" class="e4">Personal Home Pages</a>
+                        <a href="#" class="e5">E-mail Finder</a>
+                        <a href="#" class="e6">Kids Only</a>
+                        <a href="#" class="e7">Newsgroups</a>
+                        <a href="#" class="e8">Maps & Directions</a>
+                    </li>
+                </ul>
+                <div class="webcenters"></div>
+                <div class="mynews"></div>
+                <div class="shopping"></div>
+                <div class="freeproducts"></div>
+            </div>
+            <input class="netfind" type="text"/>
+            <div class="bottominfo"></div>
+            <div class="secondbar"></div>
+            <div class="footer"></div>
+            <div class="footer under footer"></div>
+        </div>
+    </body>
+    <style>
+        .p1
+        {
+            font-family: Geneva, Arial;
+            font-weight: bold;
+            font-size: small;
+            text-align: center;
+            position: relative;
+            top: 2px;
+            right: 100px;
+        }
+        li
+        {
+            width: 100px;
+        }
+        h5
+        {
+            font-family: Geneva, Arial;
+            font-size: small;
+            color: rgb(255, 255, 255);
+            position: relative;
+            left: 110px;
+            font-weight: 100;
+        }
+        .spacer2
+        {
+            width: 80px;
+            height: 1px;
+            position: relative;
+            top: -350px;
+            right: 200px;
+            float: left;
+        }
+        .aolnetfindkids
+        {
+            font-size: 14px;
+            position: relative;
+            bottom: 410px;
+            right: 117px;
+            width: 40px;
+        }
+        .kidssurfsafe
+        {
+            text-align: center;
+            font-size: 12px;
+            width: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            right: 122px;
+            bottom: 400px;
+        }
+        .spacer
+        {
+            width: 80px;
+            height: 1px;
+            position: relative;
+            top: -400px;
+            right: 100px;
+        }
+        .netfind
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            bottom: 1040px;
+            right: 254px;
+            width: 110px;
+        }
+        .container
+        {
+            width: 100%;
+        }
+        .netfindicon
+        {
+            width: 23px;
+            height: 25px;
+            float: right;
+            position: relative;
+            right: 5px;
+            top: 5px;
+        }
+        .aolnetfindlink
+        {
+            font-family: Geneva, Arial;
+            font-size: small;
+            font-weight: bold;
+            color: rgb(204, 0, 0);
+            position: relative;
+            right: -5px;
+            width: 100px;
+            top: 10px;
+            float: left;
+            height: 10px;
+        }
+        .freeproducts
+        {
+            width: 125px;
+            height: 1000px;
+            float: left;
+        }
+        .shopping
+        {
+            width: 125px;
+            height: 1000px;
+            float: left;
+        }
+        .mynews
+        {
+            width: 125px;
+            height: 1000px;
+            float: left;
+        }
+        .webcenters
+        {
+            width: 125px;
+            height: 1000px;
+            float: left;
+        }
+        .aolnetfind
+        {
+            width: 125px;
+            height: 1000px;
+            background-color: #ffcc66;
+            float: left;
+            display: flex;
+            justify-content: center;
+        }
+        .searcharea
+        {
+            margin-left: auto;
+            margin-right: auto;
+            width: 632px;
+            height: 1000px;
+            position: relative;
+            bottom: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .topnewsnow
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #cccc99;
+            position: relative;
+            bottom: 100px;
+            width: 632px;
+            height: 20px;
+        }
+        .thirdside
+        {
+            background-color: #99ccff;
+            float: left;
+            width: 111px;
+            height: 143px;
+        }
+        .secondside
+        {
+            background-color: #6699cc;
+            float: left;
+            width: 111px;
+            height: 143px;
+        }
+        .firstside
+        {
+            background-color: #003366;
+            float: left;
+            width: 111px;
+            height: 143px;
+        }
+        .toptop
+        {
+            width: 333px;
+            height: 17px;
+            background-color: #003366;
+        }
+        .top
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            bottom: 110px;
+            right: 150px;
+            background-color: blue;
+            width: 333px;
+            height: 160px;
+        }
+        .btn6
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            bottom: 122px;
+            right: -260px;
+            width: 100px;
+            height: 20px;
+        }
+        .btn5
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            bottom: 100px;
+            right: -170px;
+            width: 60px;
+            height: 20px;
+        }
+        .btn4
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            bottom: 80px;
+            right: -100px;
+            width: 60px;
+            height: 20px;
+        }
+        .btn3
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            bottom: 60px;
+            right: -25px;
+            width: 20px;
+            height: 20px;
+        }
+        .btn2
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            bottom: 40px;
+            right: 45px;
+            width: 20px;
+            height: 20px;
+        }
+        .btn1
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            bottom: 22px;
+            right: 115px;
+            width: 20px;
+            height: 20px;
+        }
+        button
+        {
+            background-color: transparent;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+        }
+        .upbar
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <script>
+    </script>
+</html>
