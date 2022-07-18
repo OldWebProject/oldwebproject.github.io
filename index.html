@@ -22,6 +22,7 @@
                         day = date.getDate();
                         document.write(dayofweekname[date.getDay()] + ", " + monthNames[date.getMonth()] + " " + day + ", " + year);
                     </script></h5>
+                    <h7></h7>
                 </div>
                 <div class="firstside"></div>
                 <div class="secondside"></div>
@@ -340,5 +341,21 @@
         }
     </style>
     <script>
+        function loadXMLDoc() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if(this.readyState == 4 && this.status == 200) {
+                    myFunction(this);
+                }
+            };
+            xmlhttp.open("GET", "AOL Updates Feed.xml", true);
+            xmlhttp.send();
+        }
+        function myFunction(xml, i) {
+            var xmlDoc = xml.responseXML;
+            x = xmlDoc.getElementByTagName("item");
+            document.getElementById("h7").innerHTML =
+            x[i].getElementByTagName("title")[0].childNodes[0].nodeValue
+        }
     </script>
 </html>
