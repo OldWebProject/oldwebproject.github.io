@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
     <body>
         <div class="container">
             <div class="upperbar">
@@ -22,7 +25,7 @@
                         day = date.getDate();
                         document.write(dayofweekname[date.getDay()] + ", " + monthNames[date.getMonth()] + " " + day + ", " + year);
                     </script></h5>
-                    <h7></h7>
+                    <pre id="output"></pre>
                 </div>
                 <div class="firstside"></div>
                 <div class="secondside"></div>
@@ -30,33 +33,42 @@
             </div>
             <div class="topnewsnow">
                 <p class="p1">Top News Now:</p>
+                <a href="#" class="topnews">The Start of AOL 4.0 again!</a>
             </div>
             <div class="searcharea">
                 <div class="aolnetfind">
                     <a href="#" class="aolnetfindlink">AOL NetFind</a>
                     <img class="netfindicon" src="https://github.com/OldWebProject/owproject/blob/main/images/netfindglobe.gif?raw=true">
-                </div>
-                <div class="s">
                     <img class="spacer" src="https://i.imgur.com/vab4CJV.png">
-                    <p class="kidssurfsafe">Kids surf safely in</p>
                     <a href="#" class="aolnetfindkids">AOL NetFind Kids Only.</a>
+                    <p class="kidssurfsafe">Kids surf safely in</p>
+                    <img class="spacer2" src="https://i.imgur.com/vab4CJV.png">
+                    <img class="spacer3" src="https://i.imgur.com/vab4CJV.png">
+                    <p class="p2">Look up a business and get directions with</p>
+                    <a href="#" class="aolnetfindpagelink">AOL NetFind Home Page</a>
+                    <ul>
+                        <li>
+                            <a href="#">Search the Web</a>
+                            <a href="#">Yellow Pages</a>
+                            <a href="#">White Pages</a>
+                            <a href="#">Personal Home Pages</a>
+                            <a href="#">E-Mail Finder</a>
+                            <a href="#">Kids Only</a>
+                            <a href="#">Newsgroups</a>
+                            <a href="#">Maps & Directions</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="aolyellowpageslink">AOL Yellow Pages</a>
+                    <img class="spacer4" src="https://i.imgur.com/vab4CJV.png">
                 </div>
-                <img class="spacer2" src="https://i.imgur.com/vab4CJV.png">
-                <ul>
-                    <li>
-                        <a href="#" class="e1">Search the Web</a>
-                        <a href="#" class="e2">Yellow Pages</a>
-                        <a href="#" class="e3">White Pages</a>
-                        <a href="#" class="e4">Personal Home Pages</a>
-                        <a href="#" class="e5">E-mail Finder</a>
-                        <a href="#" class="e6">Kids Only</a>
-                        <a href="#" class="e7">Newsgroups</a>
-                        <a href="#" class="e8">Maps & Directions</a>
-                    </li>
-                </ul>
-                <div class="webcenters"></div>
-                <div class="mynews"></div>
-                <div class="shopping"></div>
+                <div class="webcenters">
+                </div>
+                <div class="mynews">
+                    
+                </div>
+                <div class="shopping">
+                
+                </div>
                 <div class="freeproducts"></div>
             </div>
             <input class="netfind" type="text"/>
@@ -67,6 +79,93 @@
         </div>
     </body>
     <style>
+        .aolnetfindpagelink
+        {
+            font-family: Geneva, Arial;
+            width: 50px;
+            white-space: normal;
+            font-size: small;
+            position: relative;
+            top: 500px;
+            left: 5px;
+        }
+        .spacer4
+        {
+            width: 80px;
+            height: 1px;
+            position: relative;
+            top: 30px;
+            right: -20px;
+            float: left;
+        }
+        .aolyellowpageslink
+        {
+            font-family: Geneva;
+            font-size: small;
+            display: block;
+            position: relative;
+            top: 20px;
+            left: 10px;
+        }
+        .p2
+        {
+            font-family: Geneva;
+            font-size: small;
+            display: block;
+            width: 100px;
+            right: -10px;
+            position: relative;
+            top: 250px;
+        }
+    .spacer3
+    {
+        width: 80px;
+        height: 1px;
+        position: relative;
+        top: 240px;
+        right: -20px;
+        float: left;
+    }
+        ul li a:before {
+      /* For a round bullet */
+      content:'\2022';
+      /* For a square bullet */
+      /*content:'\25A0';*/
+      display: block;
+      position: relative;
+      max-width: 0px;
+      max-height: 0px;
+      left: -10px;
+      top: -0px;
+      color: red;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    li a:link
+    {
+        text-decoration: none;
+    }
+        li
+        {
+            position: relative;
+            top: -40px;
+            right: 20px;
+            width: 100px;
+            font-family: Geneva, Arial;
+            font-weight: 0;
+            font-size: small;
+            list-style-type: none;
+        }
+        .topnews
+        {
+            font-family: Geneva, Arial;
+            font-weight: bold;
+            font-size: small;
+            text-align: center;
+            position: relative;
+            left: 300px;
+            bottom: 28px;
+        }
         .p1
         {
             font-family: Geneva, Arial;
@@ -76,10 +175,6 @@
             position: relative;
             top: 2px;
             right: 100px;
-        }
-        li
-        {
-            width: 100px;
         }
         h5
         {
@@ -95,16 +190,16 @@
             width: 80px;
             height: 1px;
             position: relative;
-            top: -350px;
-            right: 200px;
+            top: 60px;
+            right: -20px;
             float: left;
         }
         .aolnetfindkids
         {
             font-size: 14px;
             position: relative;
-            bottom: 410px;
-            right: 117px;
+            bottom: -90px;
+            right: -7px;
             width: 40px;
         }
         .kidssurfsafe
@@ -116,16 +211,16 @@
             margin-left: auto;
             margin-right: auto;
             position: relative;
-            right: 122px;
-            bottom: 400px;
+            right: 10px;
+            top: 30px;
         }
         .spacer
         {
             width: 80px;
             height: 1px;
             position: relative;
-            top: -400px;
-            right: 100px;
+            top: 70px;
+            right: -20px;
         }
         .netfind
         {
@@ -134,7 +229,7 @@
             margin-right: auto;
             position: relative;
             bottom: 1040px;
-            right: 254px;
+            right: 250px;
             width: 110px;
         }
         .container
@@ -165,36 +260,46 @@
         }
         .freeproducts
         {
+            position: relative;
+            bottom: 120px;
             width: 125px;
-            height: 1000px;
+            height: 750px;
             float: left;
         }
         .shopping
         {
+            position: relative;
+            bottom: 120px;
             width: 125px;
-            height: 1000px;
+            height: 750px;
             float: left;
         }
         .mynews
         {
+            position: relative;
+            bottom: 120px;
+            background-color: #003366;
             width: 125px;
-            height: 1000px;
+            height: 750px;
             float: left;
         }
         .webcenters
         {
+            position: relative;
+            bottom: 120px;
             width: 125px;
-            height: 1000px;
+            height: 750px;
             float: left;
         }
         .aolnetfind
         {
+            position: relative;
+            bottom: 120px;
             width: 125px;
-            height: 1000px;
+            height: 750px;
             background-color: #ffcc66;
             float: left;
-            display: flex;
-            justify-content: center;
+            display: block;
         }
         .searcharea
         {
@@ -341,21 +446,5 @@
         }
     </style>
     <script>
-        function loadXMLDoc() {
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if(this.readyState == 4 && this.status == 200) {
-                    myFunction(this);
-                }
-            };
-            xmlhttp.open("GET", "AOL Updates Feed.xml", true);
-            xmlhttp.send();
-        }
-        function myFunction(xml, i) {
-            var xmlDoc = xml.responseXML;
-            x = xmlDoc.getElementByTagName("item");
-            document.getElementById("h7").innerHTML =
-            x[i].getElementByTagName("title")[0].childNodes[0].nodeValue
-        }
     </script>
 </html>
